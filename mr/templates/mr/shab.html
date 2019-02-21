@@ -1,0 +1,194 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<meta name="viewport" content="width=device-width" />
+<script src="//site.com/playerjs.js" type="text/javascript"></script>
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+<style>
+
+</style>
+<body>
+<nav>
+    <!-- zdes navigacia(ebat) -->
+
+    <!-- Подсказски для css ->
+
+<-- font-family: 'Press Start 2P', cursive; -->
+
+
+    <style>
+
+
+        body {
+background-color: #0d0d0d;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        .navul{
+            text-decoration: none;
+                        list-style: none;
+
+        }
+        .nav{
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+            width: 23%;
+            height: 50px;
+            background-color: red;
+            color: black;
+            font-family: 'Press Start 2P', cursive;
+opacity: 0.8;
+            border: 1px black solid;
+float: left;
+margin-left: 0.7em;
+
+        }
+
+
+        @media screen and (max-width: 768px)
+ {
+            .nav{
+
+                width: 21.8%;
+                font-size: 0.78em;
+            }
+
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+               .nav{
+                width: 23.4%;
+                font-size: 0.78em;
+           }
+
+        }
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1336px) and (orientation : landscape) {
+                 .nav{
+                width: 22.6%;
+                font-size: 1.3em;
+            }
+
+            }
+
+
+.fig{
+    text-align: center;
+}
+        .img{
+            width: 40%;
+        }
+    </style>
+<ul class="navul">
+    <a href="">
+    <li class="nav">Вики</li>
+    </a>
+
+    <a href="">
+        <li class="nav">Форум
+            (скоро)</li>
+    </a>
+    <a href="">
+        <li class="nav">Главная</li>
+    </a>
+    <a href="">
+        <li class="nav" >Мерч и хакинг</li>
+    </a>
+
+
+    <p class="fig">
+        <img class="img" src="https://cdn.shopify.com/s/files/1/0747/3829/products/mL0839_f9062ef9-a53f-4bab-a76b-fb88b51bf366_1024x1024.jpg?v=1516712834" alt="">
+    </p>
+</ul>
+</nav>
+<style>
+    content{
+        float: left;
+        background-color: black;
+        height: 100%;
+        width: 70%;
+        color: white;
+
+
+    font-family: 'Roboto', sans-serif;
+
+
+    }
+sidebar{
+      float:right;
+        background-color: black;
+        height: 100%;
+        width: 29%;
+        color: white;
+
+font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bar{
+      text-align: center;
+            text-decoration: none;
+            list-style: none;
+            width: 99%;
+            height: 50px;
+            background-color: red;
+            color: black;
+    font-size: 0.3em;
+            font-family: 'Press Start 2P', cursive;
+opacity: 0.8;
+            border: 1px black solid;
+}
+</style>
+
+<content>
+    <p class="fig">
+    <img src="https://fontmeme.com/permalink/190220/2e1b5be5ae970abe6f89a7c48c5c9b3c.png" alt="">
+    </p>
+
+
+
+<script>
+   var player = new Playerj1s({id:"player1", file:"//site.com/video.mp4"});
+</script>
+
+
+</content>
+{% block sidebar %}
+<sidebar>
+
+<h1>
+    <ul>
+        <li class="bar">
+    Последние новости сериала:
+        </li>
+    </ul>
+
+</h1>
+<h1>ethbfw</h1>
+</sidebar>
+{% endblock %}
+<comment>
+    {% block comment %}
+
+    {% endblock %}
+</comment>
+<footer>
+
+</footer>
+
+</body>
+</html>

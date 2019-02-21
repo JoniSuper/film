@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% extends 'mr/shab.html' %}
+    <meta charset="UTF-8">
+    {% block title %}
+    title name...
+    {% endblock %}
+</head>
+<!-- Подсказски для css ->
+
+<-- font-family: 'Press Start 2P', cursive; -->
+
+<body>
+{% block sidebar %}
+
+    <h1>
+    {{ news.title }}
+    </h1>
+    <h2>
+    {{ news.slug }}
+    </h2>
+    <h5>
+    {{ news.date_pub }}
+    </h5>
+{% endblock %}
+</body>
+
+</html>
